@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <body>
+   <section>
+    <div class="filed">
+      <div class="form">
+        <div class="tab">
+          <div class="image"></div>
+          
+          
+        </div>
+        <br><br><br><br><br>
+        <div class="name">
+        <h2>Anonymous</h2>
+        <p>Programmer</p>
+      </div>
+     
+      <div class="statistics"><div class="folowing"><h2>852</h2><p>Folowing</p></div><div class="folowers"><h2>1.6K</h2><p>Folowers</p></div></div>
+      
+      <div class="btn">
+        <button class="Follow">Follow</button><button class="msg">Message</button>
+     
+      </div>
+      <br>
+      <br>
+      
+      <div class="nav"><span id="one"></span><span id="two"></span><span id="three"></span><span id="four"></span><span id="five"></span></div>
+    </div>
+      
+      <div class="menu">
+
+      </div>
+    </div>
+   </section>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+     .filed{
+      width: 30%;
+      height: 90vh;
+     
+      border-bottom: none;
+      box-shadow: 4px 4px #efeef0;
+     
+      
+     }
+     .form{
+      width: 100%;
+      height: 80%;
+      
+      
+     }
+     .menu{
+      width: 100%;
+      height: 20%;
+      
+     }
+     .form .tab{
+      width: 100%;
+      height: 25%;
+      background-color:var(--color);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      border-radius: 12px 12px 0 0;
+     }
+     .form .tab .image{
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+     
+      z-index: 3;
+      margin-top: 10%;
+      background-image: url('https://img.freepik.com/premium-photo/hacker-with-anonymous-mask_23-2147985388.jpg?w=360');
+      background-size: cover;
+      outline: 7px solid white;
+     
+     }
+     .form .name{
+      text-align: center;
+     }
+     .form .name p{
+      font-style: italic;
+      color: var(--color);
+     }
+    .form .name h2{
+      color: var(--color);
+     }
+     .form .statistics{
+      width: 80%;
+      height: 20%;
+      
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+     }
+     .form .statistics p{
+      color: var(--color);
+     }
+     .form .statistics h2{
+      color: var(--color);
+     }
+     .btn{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+     }
+     .btn button{
+      width: 35%;
+      height: 35px;
+      background-color: var(--color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+     }
+     .nav{
+      width: 100%;
+      height: 50px;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 20px;
+     }
+     .nav span{
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      
+      margin-left: 20px;
+     }
+     .nav span:nth-child(1){
+      background-color: #3497db;
+     }
+     .nav span:nth-child(2){
+      background-color: #ff1757;
+     }
+     .nav span:nth-child(3){
+      background-color: #1cb45d;
+     }
+     .nav span:nth-child(4){
+      background-color: #9143ae;
+     }
+     .nav span:nth-child(5){
+      background-color: #f7b936;
+     }
+     :root{
+      --blue:#3497db;
+      --red:#ff1757;
+      --green:#1cb45d;
+      --perper:#9143ae;
+      --yellow:#f7b936;
+      --color:#3497db;
+     }
+    </style>
+    <script>
+      const listColor=['#3497db','#ff1757','#1cb45d','#9143ae','#f7b936']
+      let spanBlue=document.querySelector('#one')
+      let spanRed=document.querySelector('#two')
+      let spanGreen=document.querySelector('#three')
+      let spanPerper=document.querySelector('#four')
+      let spanOrange=document.querySelector('#five')
+      spanBlue.addEventListener('click',function(){
+        document.documentElement.style.setProperty('--color',listColor[0])
+      })
+      spanRed.addEventListener('click',function(){
+        document.documentElement.style.setProperty('--color',listColor[1])
+      })
+      spanGreen.addEventListener('click',function(){
+        document.documentElement.style.setProperty('--color',listColor[2])
+      })
+      spanPerper.addEventListener('click',function(){
+        document.documentElement.style.setProperty('--color',listColor[3])
+
+      })
+      spanOrange.addEventListener('click',function(){
+        document.documentElement.style.setProperty('--color',listColor[4])
+      })
+    </script>
+  </body>
+</html>
